@@ -8,9 +8,16 @@
           </form>
         </nav>
         <br></br>
-        <h1>{{msg}}</h1>
-        <h2>Here you can adopt or give for adoption dogs that need a loving family... Adoption couldn't be easier and faster !!!</h2>
+        <div class="card bg-dark text-white">
+          <img src="DogHouse/img/dog6.jpg" class="card-img" alt="street">
+            <div class="card-img-overlay">
+               <h5 class="card-title">Welcome to Dog Home</h5>
+               <p class="card-text">Here you can adopt or give for adoption dogs that need a loving family... Adoption couldn't be easier and faster !!!</p>
+               <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+        </div>
         <br></br>  
+        <br></br>
         <div class="container">
                <div class="row">
                    <div class="col-6">
@@ -52,6 +59,11 @@
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
+        <br></br>
+        <div class="card mb-3">
+           <img src="DogHouse/img/dog5.jpg" class="card-img-top" alt="doggos">
+        </div>
+        <br></br>
         <h3>Dogs for adoption:</h3>
         <ul id="example-list" class="list-group">
           {{#each examples}}
