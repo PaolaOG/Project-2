@@ -64,17 +64,18 @@ var refreshExamples = function() {
 // Save the new example to the db and refresh the list
 var handleFormSubmit = function(event) {
   event.preventDefault();
-
+  console.log($exampleEmail)
   var example = {
     text: $exampleText.val().trim(),
     description: $exampleDescription.val().trim(),
     email: $exampleEmail.val().trim()
   };
 
-  if (!(example.text && example.description && $example.email)) {
+  if (!(example.text && example.description && example.email)) {
     alert("You must enter an example text and description!");
     return;
   }
+
 
   API.saveExample(example).then(function() {
     refreshExamples();
